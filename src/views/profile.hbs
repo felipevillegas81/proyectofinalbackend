@@ -1,0 +1,13 @@
+<div class="container">
+        <h1>Sesión Iniciada</h1>
+        <p>Bienvenido {{ user.first_name }} {{ user.last_name }}</p>
+
+        <ul class="list-group">
+            <li class="list-group-item">Correo electrónico: {{ user.email }}</li>
+            <li class="list-group-item">Edad: {{ user.age }}</li>
+            <li class="list-group-item">Rol: {{ user.role }}</li>
+        </ul>
+        <a href="/" class="btn btn-primary">Página de Inicio</a>
+
+        <a href="/session/logout" class="btn btn-danger">Cerrar Sesión</a>
+</div>

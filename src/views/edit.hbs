@@ -1,0 +1,65 @@
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4" style="width: 500px;">
+        <h1 class="text-center mb-4">Edit Product</h1>
+        <div class="overflow-auto" style="max-height: 400px;">
+        <form>
+            <div class="mb-3">
+                <label for="id" class="form-label">ID:</label>
+                <input class="form-control" type="text" disabled id="id" name="id" value="{{ product.id }}">
+            </div>
+
+            <div class="mb-3">
+                <label for="title" class="form-label">Title:</label>
+                <input class="form-control" type="text" name="title" value="{{product.title}}" id="title">
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description:</label>
+                <input class="form-control" type="text" name="description" value="{{product.description}}" id="description">
+            </div>
+
+            <div class="mb-3">
+                <label for="code" class="form-label">Code:</label>
+                <input class="form-control" type="text" name="code" value="{{product.code}}" id="code">
+            </div>
+
+            <div class="mb-3">
+                <label for="price" class="form-label">Price:</label>
+                <input class="form-control" type="number" name="price" value="{{product.price}}" id="price">
+            </div>
+
+            <div class="mb-3">
+                <label for="actualStatus" class="form-label">Actual Status:</label>
+                <input class="form-control" disabled type="boolean" name="actualStatus" value="{{product.status}}">
+            </div>
+
+            <div class="mb-3">
+                <label for="status" class="form-label">New Status:</label>
+                <select class="form-control" name="status" id="status">
+                    <option value="true">Enable</option>
+                    <option value="false">Disable</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="stock" class="form-label">Stock:</label>
+                <input class="form-control" type="number" name="stock" value="{{product.stock}}" id="stock">
+            </div>
+
+            <div class="mb-3">
+                <label for="category" class="form-label">Category:</label>
+                <input class="form-control" type="text" name="category" value="{{product.category}}" id="category">
+            </div>
+
+            <div class="mb-3">
+                <label for="thumbnails" class="form-label">Thumbnails:</label>
+                <input class="form-control" type="url" name="thumbnails" value="{{product.thumbnails}}" id="thumbnails">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </form>
+        </div>
+    </div>
+</div>
+
+<script src='/js/update.js'></script>
