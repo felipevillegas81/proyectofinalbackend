@@ -1,26 +1,17 @@
 import express from 'express';
 import config from './config/dotenv.config.js'
+import handlebars from 'express-handlebars';
+import Handlebars from 'handlebars';
+import mongoose from 'mongoose';
+import MongoStore from 'connect-mongo';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
-import handlebars from 'express-handlebars';
 import { __dirname } from './utils.js';
-import mongoose from 'mongoose';
-import Handlebars from 'handlebars';
-import MongoStore from 'connect-mongo';
 import initializePassport from './config/passport.config.js';
 import passport from 'passport';
-
 import path from 'path';
-
-
 import { allowInsecurePrototypeAccess } from '@handlebars/allow-prototype-access'
-
 import routes from './routes/index.routes.js'
-
-// import productsRoutes from './routes/products.routes.js'
-// import cartsRoutes from './routes/carts.routes.js'
-// import viewsRoutes from './routes/views.routes.js'
-// import sessionRoutes from './routes/session.routes.js'
 
 const app = express()
 

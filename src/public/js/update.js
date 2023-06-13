@@ -1,6 +1,7 @@
 document.querySelector('#eSend').addEventListener('click', function (e) {
     e.preventDefault()
     const id = document.querySelector('#id').value
+    console.log("llegue")
     const data = {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
@@ -18,7 +19,7 @@ document.querySelector('#eSend').addEventListener('click', function (e) {
             'Content-Type': 'application/json'
         }, body: JSON.stringify(data)
     })
-    .then(res => res.json(data))
+    .then(res => res.json())
     .then(data => {
         window.location.href = '/'
     })
