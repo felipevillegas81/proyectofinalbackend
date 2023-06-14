@@ -1,0 +1,18 @@
+</div>
+    <h1 style="text-align: center">View Cart</h1>
+    <form class="row p-3">
+        <label for="id" >ID:</label>
+        <input class="form-control" type="text" disabled id="id" name="id" value="{{ cart.id }}">
+
+        <label for="carts" >Carts:</label>
+        <input class="form-control m-1" type="text" disabled name="title" value="{{cart.products}}" id="title">
+
+        <label for="description">Description:</label>
+        <input class="form-control m-1" type="text" disabled name="description" value="{{cart.quantity}}" id="description">
+
+        {{!-- <hr>
+        <input type="submit" value="Edit" class="btn btn-primary" id="eSend"> --}}
+    </form>
+</div>
+
+<script src='/js/update.js'></script>

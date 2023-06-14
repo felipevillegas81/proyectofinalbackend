@@ -5,11 +5,6 @@ import ProductsDto from '../daos/dtos/products.dto.js';
 
 class ProductController {
 
-    // constructor(productModel, productView) {
-    //     this.productModel = productModel;
-    //     this.productView = productView;
-    // }
-
     async getProduct(req, res) {
         try {
             const product = await productsDao.getById(req.params.id)

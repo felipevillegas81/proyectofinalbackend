@@ -92,20 +92,28 @@
         </table>
     </div>
 
-    <form class="row p-3" action="/api/carts" method="POST">
+    <hr>
+
+    <div>
+
+        <h1>Create New Cart</h1>
+        
+        <form class="row p-3" action="/api/carts" method="POST">
             <label for="products" class="col-lm-20 col-form-label col-form-label-lm">Products:</label>
             <input class="form-control m-1" type="array" name = "products" placeholder="Products">
 
             <label for="quantity">Quantity:</label>
             <input class="form-control m-1" type="text" name = "quantity" placeholder="Quantity">
             <input type="submit" value="Create Cart" class="btn btn-primary">
-    </form>
-
+        </form>
+    </div>
     
     <hr>
         
     <div>
-        <h1>Create New Products</h1>
+        
+        <h1>Create New Product</h1>
+
         <form class="row p-3" action="/api/products" method="POST">
 
             <label for="title" class="col-lm-20 col-form-label col-form-label-lm">Title:</label>
@@ -141,7 +149,7 @@
 
         {{ else }}
         <div class="container">
-        <h1>Hi, how do you want to log in</h1>
+        <h1>Hi, How Do You Want To Log in Into E-Commerce</h1>
         <a href="/session/github" class="btn btn-warning custom-btn">Iniciar Sesión con GitHub</a> <br><br>
         <a href="/login" class="btn btn-info custom-btn">Iniciar Sesión Local</a> <br><br>
         <a href="/register" class="btn btn-success custom-btn">Registrarse</a>
