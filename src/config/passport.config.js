@@ -13,7 +13,7 @@ const initializePassport = () => {
       {
         clientID:'Iv1.2993814456c75940',
         clientSecret:'f0ec5228d373161ce04095e9de6a8ba90fa37954',
-        callbackURL: "http://localhost:3000/api/sessions/githubcallback",
+        callbackURL: "https://entregafinalbackend-production-d8f2.up.railway.app/api/sessions/githubcallback",
         scope: ['user:email']
       },
   async (accessToken, refreshToken, profile, done) => {
